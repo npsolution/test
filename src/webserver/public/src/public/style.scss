@@ -1,0 +1,28 @@
+.weather[data-weather] {
+	position: absolute;
+	height: 20px;
+	width: 100%;
+	z-index: 11;
+	top: 0;
+	left: 0;
+	transition: opacity 0.75s ease;
+
+	ul {
+		margin: 0;
+		padding: 10px;
+		display: table;
+		width: 100%;
+
+		li {
+			display: inline-table;
+  			text-align: center;
+			white-space: nowrap;
+			background-color: rgba(0,0,0,0.8);
+			color: #fff;
+			padding: 4px 10px;
+			border-radius: 5px;
+			margin: 2px;
+			font-size: 16px;
+		}
+	}
+}

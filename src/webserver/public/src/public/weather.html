@@ -1,0 +1,29 @@
+<ul>
+	<% if (temperature !== undefined) { %>
+	<li class="temperature">
+		🌡️ <%= temperature %></p>
+	</li>
+	<% }; %>
+	<% if (precipitation !== undefined) { %>
+		<% if (precipitation.mode === 'rain' || precipitation.mode === 'none') { %>
+		<li class="rain">
+			🌧️ <%= precipitation.value %></p>
+		</li>
+		<% }; %>
+		<% if (precipitation.mode === 'snow') { %>
+		<li class="snow">
+			🌨 <%= precipitation.value %></p>
+		</li>
+		<% }; %>
+	<% }; %>
+	<% if (winddirection !== undefined) { %>
+	<li class="wind-direction">
+		🌬️ <%= winddirection %></p>
+	</li>
+	<% }; %>
+	<% if (windspeed !== undefined) { %>
+	<li class="wind">
+		🌀 <%= windspeed %></p>
+	</li>
+	<% }; %>
+</ul>
